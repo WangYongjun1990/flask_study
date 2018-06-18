@@ -7,7 +7,10 @@
 # 忽略所有的 log 文件
 *.log
 
-# 忽略所有的 JSON 文件 和 XLS 文件
+# 忽略所有的 JSON 文件， XLS 文件，png 文件
 *.json
 *.xls
 *.png
+
+# 忽略虚拟环境文件夹
+venv/
