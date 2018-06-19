@@ -1,12 +1,12 @@
 # -*- coding:utf-8 -*-
 
 """
-File Name: `models`.py
+File Name: `mitest_platform`.py
 Version:
 Description:
 
 Author: wangyongjun
-Date: 2018/6/12 11:42
+Date: 2018/6/19 17:41
 """
 
 from my_flask import db

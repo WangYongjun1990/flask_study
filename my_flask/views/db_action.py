@@ -14,8 +14,8 @@ from flask_restful import Resource
 from flask import request
 from flask import jsonify
 
-from my_flask.models import User
-
+from my_flask.models.mitest_platform import User
+from my_flask.api.comm_log import logger
 
 # 蓝图
 db_action = Blueprint('db_action_interface', __name__)
@@ -27,7 +27,8 @@ class DbAction(Resource):
 
     def post(self):
         all_users = User.query.all()
-        # print('all_users:{0} \n type:{1}'.format(all_users, type(all_users)))
+        logger.debug("This is debug information")
+        logger.info('all_users:{0} \n type:{1}'.format(all_users, type(all_users)))
 
         response = jsonify(
             {"code": "666", "message": u"测试一下，demo all right", "result": str(all_users)}

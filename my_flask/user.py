@@ -12,7 +12,7 @@ import json
 
 
 from my_flask import db
-from my_flask.models import User, ProjectInfo, SystemInfo
+from my_flask.models.mitest_platform import User, ProjectInfo, SystemInfo
 
 
 def insert_user(**kwargs):

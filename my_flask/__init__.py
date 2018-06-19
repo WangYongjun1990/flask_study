@@ -15,7 +15,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 
-from my_flask.config import Config
+from my_flask.config.default import Config
 
 app = Flask(__name__)
 
